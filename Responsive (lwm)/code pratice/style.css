@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+/* pixels (px) are fix so child doesnot depend on parent */
+/* #box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+#inner{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+} */
+/* in percentage (%) child height and width depends on parent */
+/* #box{
+    height: 700px;
+    width: 300px;
+    background-color: crimson;
+}
+#inner{
+    height: 50%;
+    width: 50%;
+    background-color: royalblue;
+} */
+ /* viewport width (vw) and viewport height (vh) is ma according to the pixel or parent size adjust nahi hota balka according to the screen size (matlab width or  height ) set hota ha*/
+/* #box {
+    height: 500px;
+    width: 400px;
+    background-color: crimson;
+}
+
+#inner {  
+    height: 50vh;
+    width: 50vw;
+    background-color: royalblue;
+} */
+/* vmax (viewport maximum) vmin (viewport min) ....q ka phone par width or height size change hota ha laptop  or baki devices ma bhi  ma bhi change hota ha accordingly ... phone ma height maximum hota ha or laptop ma width maximum hota ha  ...bohat kum jaga use hota ha */
+/* h1{
+    font-size: 7vmax;
+}
+h2{
+    font-size: 7vmin;
+} */
+/* in this we set a font size to parent and then we set the font size to childern to em ... 1 em means  same font-size as parent , 2em means double font-size from parent...... is ki madad sa hum bss ak bar parent ka size change kar ka sab ka size change kar sakta han q ka sab ka size parent pr hi depend kar raha ha  */
+/* .parent{
+    background-color: brown;
+    width: 40%;
+    font-size: 30px;
+}
+h1{
+    font-size: 1em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+} */
+/* 1 rem = 16px rem screen size par dependent hota ha  */
+/* .parent {
+    background-color: brown;
+    width: 40%;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+} */
+
+ /* .....:layout and design:.... */
+ /* absolute .... position absolute use kar ka hum puri website bana sakta han par ya responsive karna ma bohat masla karta ha is lia koshish karo ka position absolute use na karo ..... absolute karna sa div hawa ma uth jata ha phir hum isa kahain bhi place kar sakta han */
+/* .box{
+    height:300px;
+    width: 300px;
+    background-color:blueviolet;
+    position: absolute;
+    left:50%;
+} */
+ /* flex.... display flex ka use zada karna ha display absolute ka mukabla ma */
+ /* .parent{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display:flex;  
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+ .child1{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+    border: 5px solid black;
+ }
+ .child2 {
+     height: 500px;
+     width: 500px;
+     background-color: lightcoral;
+    border: 5px solid black;
+ } */
+
+ /* .box{
+    height: 500px;
+        width: 500px;
+        background-color: crimson;
+        border: 5px solid black;
+ } */
+ /* ya srif tab apply ho gi jab mari width 600 px ya us sa kum ho gi */
+ /* 600 px ka ak standerd set ha q ka humari sari devices 600px ka andar hi a jati han is lia hum 600 ya 550 use kar saktay han */
+ /* @media(max-width:600px){
+    .box{
+        background-color: rosybrown;
+    }
+ } */
