@@ -157,7 +157,7 @@ setTimeout(function () {
 
 // first class function:
 
-// js ma ya ak concept ha jis ma hum functions ko as a value treate kar saktay han ... maslan ka hum ak function ka perameters ma bhi function hi da rahay han
+// js ma ya ak concept ha jis ma hum functions ko as a value treate kar saktay han matlab variable ma rakh saktay han... maslan ka hum ak function ka perameters ma bhi function hi da rahay han
 
 // e.g:
 
@@ -195,7 +195,7 @@ Array.isArray([])// or aghar is ka andar object likhain ga to ya da ga "false " 
 
 // ..........................................................
 
-// How to delete Objrct proprity (mara matlab key):
+// How to delete Object proprity (mara matlab key):
 
 var last = {
     name: "ashi",
@@ -203,3 +203,41 @@ var last = {
 }
 // aghr hum age ki value nahi balka puri ki puri age ki properity hi hatana chatay han to hum ya karain ga:
 delete last.age;
+
+//...........................................................
+
+// when ever you see "new" kwyword make a blank object in your mind and after that run the constructor function and add the details or values of that function into your blank object
+//means:
+//new keyword also create a blank object for the constructor which is getting called just after the new keyword
+
+//e.g:
+
+function xyz() {
+    this.age = 12;
+}
+
+//...........................................................
+
+//iife
+
+//iife=> immediately invoked function expression
+
+//is sa hum function ko foran chalatay han or function ka varibles bhi private bantay han
+
+var ans = (function () {
+    var privateVariableBantaHa = 12;// ya variable private ha 
+    return {
+        getter: function () {
+            console.log(privateVariableBantaHa);
+        },// is function sa hum private variable ko get kar saktay han 
+        setter: function (val) {
+            privateVariableBantaHa = val ;
+        }// is function sa hum private variable ki value ko set kar saktay han
+    }// hum na ans ma ak boject return kar dia jis ma do chezain han ak to getter function or ak setter function 
+})()// ya function jo "()" ka andar ha us ko hum "iife"(immediately invoked function expression) boltay han ....or is ka andar ka variables private hotay han jin ko call karna ka lia getter or setter function bnanay partay han.
+
+//...........................................................
+
+//Prototype
+
+prototype are already builtin properties and methods in js which we do'nt made 
