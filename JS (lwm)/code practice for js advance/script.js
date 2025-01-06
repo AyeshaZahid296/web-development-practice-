@@ -240,4 +240,40 @@ var ans = (function () {
 
 //Prototype
 
-prototype are already builtin properties and methods in js which we do'nt made 
+// Prototypes in JavaScript are built-in mechanisms that allow objects to inherit properties and methods. The prototype is an object associated with every JavaScript object, providing default properties and methods that can be shared among all instances of that object type.
+
+//e.g:
+
+// the ".length" method is given to array by js ... and we did not make it by our own ..
+//  Objects like Array, Object, and String in JavaScript come with their own prototypes, which contain built-in methods (e.g., push for arrays or toUpperCase for strings).
+
+//...........................................................
+
+//Prototypal inheritance
+
+// Prototypal inheritance ak fecture ha js ma where objects can inherit properties and methods from another object called their prototype. ya allow karta ha ak boject ko ka wo dusra object ka saat code or behaviour share kara or code reuse karay .
+
+let human = {
+    canFly : false,
+    canWalk : true,
+    canTalk : true,
+    canEat : true,
+    haveEmotions : true, 
+}
+let webStudent = {
+    canMakeWebsites: true,
+    canFindErrors : true,
+}
+webStudent.__proto__ = human;//___proto__ ya likh kar hum us object ki properties ko inherate karwa satay han jis ka object ka naam hum na = ka baad likha ha
+
+
+//...........................................................
+
+//global scope:
+// jab bhi koi chez in bractes {} ka andar nahi hoti to hum usa global scope khatay han
+    
+let a = 12; // is ma a globel scope ma ha
+
+function sdf() {
+    let b = 23; // is ma b local scope ma ha q ka ya function ki bracktes ka andar ha 
+}
